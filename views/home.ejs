@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro City Bus</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <% if (user) { %>
+            <li><a href="/auth/logout">Log out</a></li>
+            <% } else { %>
+            <li><a href="/auth/login">Login</a></li>
+            <% } %>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/vehicleInfo">Track Vehicle</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To Metro City Bus Project</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="text">
+                <h2 class="tinCity">Tin City Metro Bus</h2>
+                <p class="tinUrban">
+                    The Tin City Metro Urban Transportation Initiative is aimed at mitigating the costs of
+                    intra-city travel and providing a respite from the daily transportation challenges faced by commuters. It is more than a
+                    transportation project; it is a catalyst for community
+                    development. "These buses are not mere vehicles; they are mobile hubs of innovation, equipped with the latest amenities
+                    such as Near Field Communication (NFC) and secure card payment systems. We are ushering in an era of digitised travel,
+                    aligning with the global shift towards cashless transactions for the convenience of our passengers".
+                </p>
+            </div>
+            <div class="image">
+                <img src="/images/metroBus(3).webp" alt="Metro Bus">
+            </div>
+        </div>
+    </main>
+    <script src="/engine.js"></script>
+    <footer>
+        <p>&copy; 2024 Metro City Bus. All rights reserved.</p>
+        <p>Contact us at <a href="">support@metrocitybus.com</a></p>
+    </footer>
+</body>
+</html>
